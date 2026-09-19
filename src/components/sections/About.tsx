@@ -84,19 +84,29 @@ export function About() {
           />
 
           <motion.div
-            initial={{ clipPath: "inset(0 0 100% 0)" }}
-            whileInView={{ clipPath: "inset(0 0 0% 0)" }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
             className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-emerald-900"
           >
-            <Image
-              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=1200&q=80"
-              alt="Founder of Royal Beauty in a calm, softly lit treatment room"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
+            <motion.div
+              variants={{
+                hidden: { clipPath: "inset(0 0 100% 0)" },
+                visible: {
+                  clipPath: "inset(0 0 0% 0)",
+                  transition: { duration: 1.1, ease: [0.22, 1, 0.36, 1] },
+                },
+              }}
+              className="absolute inset-0"
+            >
+              <Image
+                src="/images/about-founder.jpg"
+                alt="A practitioner giving a calm, considered facial treatment"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </motion.div>
           </motion.div>
 
           <motion.div

@@ -43,12 +43,12 @@ export function Hero() {
         className="absolute inset-0 -top-[10%] h-[120%] w-full"
       >
         <Image
-          src="https://images.unsplash.com/photo-1616394158624-9f2946a3b5a1?auto=format&fit=crop&w=1920&q=80"
-          alt="A serene beauty clinic treatment room bathed in soft, editorial light"
+          src="/images/hero-editorial.jpg"
+          alt="Editorial beauty portrait with a bold red lip, in warm cinematic light"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[center_25%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/60 to-emerald-950/30" />
         <div className="absolute inset-0 bg-emerald-950/20" />

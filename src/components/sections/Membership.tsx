@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -20,6 +21,17 @@ export function Membership() {
       id="membership"
       className="relative overflow-hidden bg-charcoal-950 py-28 md:py-36"
     >
+      <div className="absolute inset-0" aria-hidden="true">
+        <Image
+          src="/images/membership-interior.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/85 to-charcoal-950/60" />
+      </div>
+
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <motion.div
           className="absolute left-[10%] top-[10%] h-72 w-72 rounded-full bg-emerald-600/25 blur-3xl"

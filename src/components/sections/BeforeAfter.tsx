@@ -8,18 +8,14 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
 
 const CASES = [
   {
-    label: "Skin Boosters — 8 week course",
-    beforeSrc:
-      "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1000&q=80",
-    afterSrc:
-      "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1000&q=80",
+    label: "Hot Stone Ritual — signature treatment",
+    beforeSrc: "/images/before-skinboosters-1.jpg",
+    afterSrc: "/images/after-skinboosters-1.jpg",
   },
   {
-    label: "Jawline Contouring — single session",
-    beforeSrc:
-      "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=1000&q=80",
-    afterSrc:
-      "https://images.unsplash.com/photo-1521146764736-56c929d59c83?auto=format&fit=crop&w=1000&q=80",
+    label: "Facial Rejuvenation — in-clinic session",
+    beforeSrc: "/images/before-jawline-1.jpg",
+    afterSrc: "/images/after-jawline-1.jpg",
   },
 ];
 
