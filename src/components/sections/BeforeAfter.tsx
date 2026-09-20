@@ -6,16 +6,21 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CompareSlider } from "@/components/ui/CompareSlider";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
+import beforeSkinboosters from "../../../public/images/before-skinboosters-1.jpg";
+import afterSkinboosters from "../../../public/images/after-skinboosters-1.jpg";
+import beforeJawline from "../../../public/images/before-jawline-1.jpg";
+import afterJawline from "../../../public/images/after-jawline-1.jpg";
+
 const CASES = [
   {
     label: "Hot Stone Ritual — signature treatment",
-    beforeSrc: "/images/before-skinboosters-1.jpg",
-    afterSrc: "/images/after-skinboosters-1.jpg",
+    beforeSrc: beforeSkinboosters,
+    afterSrc: afterSkinboosters,
   },
   {
     label: "Facial Rejuvenation — in-clinic session",
-    beforeSrc: "/images/before-jawline-1.jpg",
-    afterSrc: "/images/after-jawline-1.jpg",
+    beforeSrc: beforeJawline,
+    afterSrc: afterJawline,
   },
 ];
 

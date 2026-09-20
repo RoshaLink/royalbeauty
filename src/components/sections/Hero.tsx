@@ -4,6 +4,8 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import heroEditorial from "../../../public/images/hero-editorial.jpg";
+
 import { RevealText } from "@/components/ui/RevealText";
 import { ButtonLink } from "@/components/ui/Button";
 import { ScrollCue } from "@/components/ui/ScrollCue";
@@ -43,7 +45,7 @@ export function Hero() {
         className="absolute inset-0 -top-[10%] h-[120%] w-full"
       >
         <Image
-          src="/images/hero-editorial.jpg"
+          src={heroEditorial}
           alt="Editorial beauty portrait with a bold red lip, in warm cinematic light"
           fill
           priority

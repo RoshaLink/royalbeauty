@@ -1,11 +1,11 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 interface CompareSliderProps {
-  beforeSrc: string;
-  afterSrc: string;
+  beforeSrc: StaticImageData;
+  afterSrc: StaticImageData;
   beforeAlt: string;
   afterAlt: string;
   label?: string;

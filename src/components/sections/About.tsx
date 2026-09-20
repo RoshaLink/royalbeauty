@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { PersianMotif } from "@/components/ui/PersianMotif";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
+import aboutFounder from "../../../public/images/about-founder.jpg";
+
 const STATS = [
   { value: "2", label: "Heritages" },
   { value: "12+", label: "Years of craft" },
@@ -100,7 +102,7 @@ export function About() {
               className="absolute inset-0"
             >
               <Image
-                src="/images/about-founder.jpg"
+                src={aboutFounder}
                 alt="A practitioner giving a calm, considered facial treatment"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

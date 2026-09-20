@@ -7,6 +7,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
+import membershipInterior from "../../../public/images/membership-interior.jpg";
+
 const PERKS = [
   "Priority booking across all treatments",
   "Complimentary quarterly touch-ups",
@@ -23,7 +25,7 @@ export function Membership() {
     >
       <div className="absolute inset-0" aria-hidden="true">
         <Image
-          src="/images/membership-interior.jpg"
+          src={membershipInterior}
           alt=""
           fill
           sizes="100vw"
